@@ -1,0 +1,2 @@
+# magni
+Magni Workout Manager
