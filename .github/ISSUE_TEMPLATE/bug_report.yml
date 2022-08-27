@@ -1,0 +1,63 @@
+name: Bug Report
+description: Let us know about an unexpected error, a crash, or an incorrect behavior.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Thank you for opening an issue.
+
+  - type: textarea
+    id: os-info
+    attributes:
+      label: Please provide information about your os/environment.
+      placeholder: |
+        OS: ...
+        Version: ...
+      render: plain text
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Please describe the steps to reproduce the issue.
+      description: Please be as detailed as possible.
+      placeholder: |
+        1. Open Magni
+        2. Navigate to ...
+        3. ...
+    validations:
+      required: true
+
+  - type: dropdown
+    id: reproducibility
+    attributes:
+      label: How easy is it to reproduce the bug?
+      multiple: false
+      options:
+        - "every time"
+        - "somtimes"
+        - "rarly"
+        - "only once"
+    validations:
+      required: true
+
+  - type: textarea
+    id: debug
+    attributes:
+      label: Please provide any error messages or debug information you encountered.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: What should have happened?
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        **Note:** If the submit button is disabled and you have filled out all required fields, please check that you did not forget a **Title** for the issue.

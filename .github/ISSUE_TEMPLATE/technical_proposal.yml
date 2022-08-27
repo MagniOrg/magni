@@ -1,0 +1,55 @@
+name: Technical Proposal
+description: Propose a new feature and potential implementations for Magni.
+labels: ["proposal", "status/draft"]
+body:
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What do you want to propose?
+      description: |
+          A clear and concise description of what you want Magni to be able to do.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: How would Magni benifit from this proposal?
+      description: |
+        Describe why this feature can improve Magni, and give examples on how users would use this feature.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: What alternatives have you considered
+      description: A clear and concise description of any alternative solutions or features you've considered.
+    validations:
+      required: true
+
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation Details
+      description: |
+        How can this proposal be implemented?
+        What impact does this have on the existing codebase?
+        Are any additional dependencies necessary?
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional
+    attributes:
+      label: Additional Context
+      description: Add any other context or screenshots about the feature request here.
+    validations:
+      required: true
+
+
+  - type: markdown
+    attributes:
+      value: |
+        **Note:** If the submit button is disabled and you have filled out all required fields, please check that you did not forget a **Title** for the issue.

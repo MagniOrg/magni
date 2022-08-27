@@ -1,0 +1,46 @@
+name: Feature Request
+description: Suggest a new feature or other enhancement.
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        # Thank you for opening a feature request.    
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Which platform does this feature apply to?
+      description: Select all platforms, that you want to see your feature on.
+      multiple: true
+      options:
+        - iOS
+        - Android
+        - Web
+        - API
+        - Platform independent
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What feature do you want to propose?
+      description: |
+          Please describe your proposal.
+    validations:
+      required: true
+
+  - type: textarea
+    id: reasoning
+    attributes:
+      label: Why do you need this feature?
+      description: |
+        Describe why your feature can improve Magni, and/or give an example on how users can use this feature.
+    validations:
+      required: false
+
+  - type: markdown
+    attributes:
+      value: |
+        **Note:** If the submit button is disabled and you have filled out all required fields, please check that you did not forget a **Title** for the issue.
